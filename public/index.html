@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	
+	<meta charset="utf-8" />
+	<title>cURL-CouchDB-Js-Runner</title>
+	<link href="css/jquery.terminal.css" rel="stylesheet" />
+	<link href="css/pretty-json.css" rel="stylesheet" />
+	<link href="css/js-curl.css" rel="stylesheet" />
+	
+	<!-- Formattage JSON : https://github.com/warfares/pretty-json -->
+	<script src="js/jquery-1.9.1-min.js"></script>
+	<script src="js/underscore-min.js" ></script>
+    <script src="js/backbone-min.js" ></script>
+	<script src="js/pretty-json-min.js"></script>
+	
+	<!-- Terminal : http://terminal.jcubic.pl/ -->
+    <!-- MODIF - Prise en compte du port dans le lien ( [^\s:"'<)] => [^\s"'<)])  -->
+	<script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.terminal-0.5.4.js"></script>
+
+	<!-- Transfert des commandes à NodeJs pour l'exécution de cURL  -->
+	<script src="js/js-curl.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body>
+	
+	<!-- DEBUT | Wrapper -->
+	<div id="wrapper">
+		
+		<header>
+            <h1>cURL &amp; CouchDB</h1>
+		</header>
+		
+		<div id="terminal"></div>
+		<div id="result">...</div>
+
+        <form id="jsonDisplay">
+            <button type="button" name="expandAll" class="gray">Expand all</button>
+            <button type="button" name="collapseAll" class="gray">Collapse all</button>
+            <span>CouchDB : <a href="http://localhost:5984/_utils/" target="_blank">http://localhost:5984/_utils/</a></span>
+        </form>
+
+	</div>
+	<!-- FIN | Wrapper -->
+	
+	<footer></footer>
+	
+</body>
+</html>
