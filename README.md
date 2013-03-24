@@ -8,6 +8,11 @@ Pour faire fonctionner le tout, il faut exécuter la page en lancant un serveur 
 Le serveur node permet de réceptionner les appel AJAX effectués par la page WEB et d'exécuter cURL en arrière plan.
 Testé seulement sous Windows, j'adapterai pour environnement Linux si besoin.
 
+<p align="center">
+  <img style="border:1px solid gray" src="https://raw.github.com/s4tori/cURL-CouchDB-Js-Runner/master/public/cURL-CouchDB-Js-Runner.jpg" alt="Interface" />
+</p>
+
+
 ## Installation
 
 Il vous faut :
